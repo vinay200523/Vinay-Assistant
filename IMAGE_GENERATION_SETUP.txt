@@ -1,0 +1,31 @@
+﻿VINAY ASSISTANT - FREE LOCAL AI SETUP
+
+This version is designed to run without paid APIs or an API key.
+
+FEATURES
+- Text chat: Qwen2.5-VL 3B through llama.cpp, running locally.
+- Image understanding: Qwen2.5-VL 3B multimodal model, running locally.
+- Image processing: Pillow-based local edits (enhance, grayscale, sharpen, blur, edges, rotate, resize).
+- Image generation: Stable Diffusion 1.5 Q4 GGUF through stable-diffusion.cpp, CPU mode.
+- Voice input: browser speech recognition when supported by Chrome.
+- Chat history and generated images are stored on this laptop.
+
+IMAGE GENERATION LIMITS
+- The local Stable Diffusion 1.5 model generates at 512-pixel-class sizes.
+- This laptop uses Intel integrated graphics, so generation runs on CPU and may take several minutes.
+- During generation the app temporarily unloads the vision model to free RAM, then starts it again.
+- Newer cloud image models may produce higher quality and larger images, but this local option does not require a paid API.
+
+FIRST RUN
+1. Start Vinay Assistant using the desktop shortcut or Run Assistant.bat.
+2. Wait for the status to show Local AI ready. The first model download/load can take a while.
+3. Attach a photo and press Send or Analyze to understand it.
+4. Type an image prompt and press Create image to generate locally.
+5. If image generation says the model is still downloading, leave the laptop plugged in and connected to the internet until the model download completes.
+
+IMPORTANT
+- Do not add an OPENAI_API_KEY for these local features.
+- The app does not need a paid API subscription or API credits.
+- Start AI Server.bat starts the local Qwen2.5-VL vision model.
+- If the app is closed, reopen it with the Vinay Assistant desktop shortcut.
+
